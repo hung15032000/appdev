@@ -1,6 +1,6 @@
 
 #include <stdlib.h>		// for random numbers
-#include <time.h>
+// #include <time.h>	// for randomization
 #include <signal.h>
 #include "screen.h"
 #include <stdio.h>
@@ -22,7 +22,7 @@ int main(){
 //	srand(time(NULL));
 //	for(int i=0; i<COL; i++) dec[i] = rand()%70+30;
 		clearScreen();
-		setColors(RED, bg(WHITE));
+//		setColors(RED, bg(WHITE));
 //	barChart(dec);
 		struct WAVHDR hdr;
 		fread(&hdr, sizeof(hdr), 1, f);		// read WAV header

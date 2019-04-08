@@ -5,9 +5,16 @@
 
 void barChart(int db[]){
 	int i, j;
+//	setColors(RED, bg(BLACK));
 	for(i=0; i<COL; i++){	// for 80 columns
 		for(j=0; j<db[i]/3; j++){
 			printf("\033[%d;%dH", 35-j, i+1);
+			if(j>20){
+				setColors(BLUE, bg(WHITE));
+			}
+			else
+				setColors(RED, bg(WHITE));
+			printf("\033[%d,%dH", 35-j, i+1);
 #ifdef UNICODE			// conditional compilation
 			printf("%s", BAR);
 #else

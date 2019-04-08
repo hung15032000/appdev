@@ -1,4 +1,6 @@
 // constants definitions
+//#define DEBUG		// in developing mode or not, conditional complication
+
 #define RATE 16000
 #define DUR 1
 #define RCMD "arecord -r16000 -c1 -f S16_LE -d1 -q test.wav"
