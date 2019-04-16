@@ -1,1 +1,31 @@
-# This is application development ver 1
+# This is application development ver 1.1 -------- by e1800949
+
+This application offers a possibility to turn a Raspberry Pi as a sound device. 
+The application comes with 2 functions: a sound collector and a test tone 
+generator.
+
+List of content:
+	1. Configuration Instructions
+		Have a SD card and download "Noobs" ZIP file to the SD card.
+		A Raspberry PI
+		An Ethernet 
+		USB Soundcard
+		Recording devices
+		Power cable connect from the RPI to Computer
+
+	2. Installation Instructions
+		Download the "Noobs" ZIP file to SD card
+		Set up the RPi Default Booting and Keyboard layout
+		Specify the email address which is received the IP address
+		Set up USB sound Card as Default
+	
+	3. Operating Instructions
+		Using Linux as Compiler		
+
+	4. List of Files (Manifest)
+
+	5. Copyright / Copyleft
+
+	6. Contact Info. 
+
+	7. Credits and Acknowledgements
