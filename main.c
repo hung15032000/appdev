@@ -23,7 +23,7 @@ int main(int argc, char **argv[]){
 			scanf("%d %d", fL, fR);
 		}
 		else{
-			printf("Wrong number of channel\n"
+			printf("Wrong number of channel\n");
 			return 1;
 		}
 		printf("Duration of sound: ");

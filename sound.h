@@ -4,6 +4,7 @@
 #define RATE 16000
 #define DUR 1
 #define RCMD "arecord -r16000 -c1 -f S16_LE -d1 -q test.wav"
+#define PI 3.14159
 // data structures
 struct WAVHDR{
 	char ChunkID[4];		// must be "RIFF"
@@ -27,4 +28,4 @@ struct WAVHDR{
 void displayWAVHDR(struct WAVHDR);
 void showID(char *, char *);
 void displayWAVDATA(short []);
-void testToni(int ch, int fL, int fR, float dur);
+void testTone(int ch, int fL, int fR, float dur);
