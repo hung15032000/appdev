@@ -15,17 +15,58 @@ List of content:
 
 	2. Installation Instructions
 		Download the "Noobs" ZIP file to SD card
+			Link download: https://www.raspberrypi.org/downloads/noobs/
 		Set up the RPi Default Booting and Keyboard layout
 		Specify the email address which is received the IP address
 		Set up USB sound Card as Default
-	
+		Install libcurl	
+
 	3. Operating Instructions
-		Using Linux as Compiler		
-
+		Using Linux as Compiler	
+		Operating files command:
+			make clean: to remove all unnecessary files
+			make: to update all the changes and check your errors
+			./sound.out: to execute the sound wave file
+			./sound.out arg: to execute the the testTone function
+		Command to make a copy of file
+			scp "file you want to copy" "your email address" :.
+				Example: scp sound.php e1800949@shell.puv.fi:.	
+		Create a Github account and upload to the website using commands:
+			git status: to check the condition of the files
+			git add: to add files to staging area
+			git commit: create a new commit containing the current contents of the index and
+					    the given log message describing the changes
+			git push: upload local file in staging area to a remote repository
 	4. List of Files (Manifest)
-
+		README
+			Instruction to the project.
+		comm.c
+			Communication files between Raspberry Pi and the server.			
+		comm.h
+			Header file of Communication file.
+		main.c
+			Main file of the project.
+		makefile
+			A text file contain way to compile code and way to clean the unncessary file
+		screen.c
+			This file contain screen function. They are used to display sound levels on a screen as a bar chart
+		screen.h
+			Specify color and some constant value as define and some function to screen.c
+		sound.c
+			This file contain testTone function and connect to .wav file
+		sound.h
+			Specify some constant value as define and some function to sound.c
+		sound.php
+			File to present the result of .wavfile
+		testcurl.c
+			File contains function to test the libculb
 	5. Copyright / Copyleft
+		All the file is written by Nguyen Duy Hung. You can copy but don't edit. 		
 
 	6. Contact Info. 
+		Nguyen Duy Hung - e1800949
+		email: hungnguyen150300@gmail.com
 
 	7. Credits and Acknowledgements
+		The project is being instructed by Dr.Gao Chao.
+		Author : Nguyen Duy Hung (VAMK)
